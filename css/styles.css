@@ -1,0 +1,19 @@
+body {
+    background-image: url(https://giordanos.com/wp-content/uploads/Hero-image_1210-v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    text-align: center;
+    background-color:white;
+    color:white;
+}
+.contacts {
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+label {
+    color:greenyellow;
+}
+button {
+    color: greenyellow;
+}

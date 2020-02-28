@@ -5,7 +5,13 @@ body {
     text-align: center;
     background-color:white;
     color:white;
+    animation: pizza _anim 75s linear infinite;
 }
+@keyframes pizza_anim {
+    0% {background-position: 0 0;} 
+    100%{background-position:-2122px 0;}
+}
+
 .contacts {
     color: white;
     text-align: center;

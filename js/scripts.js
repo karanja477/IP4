@@ -62,10 +62,7 @@ function calctotalPrice(e) {
 
 }
 
-
-
 // Delivery form inputs and alerts
-
 
 
 $(document).ready(function () {

@@ -7,10 +7,6 @@ body {
     color:white;
     background-color: darkblue;
 }
-@keyframes pizza_anim {
-    0% {background-position: 0 0;} 
-    100%{background-position:-2122px 0;}
-}
 
 .contacts {
     color: white;
@@ -18,12 +14,12 @@ body {
     font-size: medium;
 }
 label {
-    color:greenyellow;
+    color:green;
 }
 button {
     color: darkorange;
     text-align: center;
-    background-color: darkblue;
+    background-color: green;
     padding: 15px 32px;
     display: inline;
 }

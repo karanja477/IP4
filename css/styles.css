@@ -1,11 +1,11 @@
 body {
-    background-image: url(https://lh3.googleusercontent.com/proxy/zispwzVHegkL23DWtfFs3cyoydvHdIJbl4I7gweZOQvT1htB6iEEi8y7SCHsw8krTB_ZzePZGHTwoaU7BUVb5Q);
+    background-image: url(https://image.shutterstock.com/image-photo/concept-promotional-flyer-poster-restaurants-260nw-1060535249.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
     text-align: center;
     background-color:white;
     color:white;
-    animation: pizza _anim 75s linear infinite;
+    background-color: darkblue;
 }
 @keyframes pizza_anim {
     0% {background-position: 0 0;} 

@@ -1,132 +1,60 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">    
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-
-    <title>Delicacies Pizza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
+
     <body>
+        <h1>Delicacies Pizza</h1>
         <div class="container">
-           <h2><strong>Delicacies Pizza</strong></h2>
-           <p>The homemade Pizza dough is produced in-house on a daily basis and informs why pizza at Delicacies always taste delicious</p>
-           <p>The twisty bread, the signature wingz and the delicious double meal are additional value for money that keep our customers coming are all day and night</p>
-           <p>That is why you should knock at Delicacies Pizza for sweet tasting and mouth-watering</p>
-           <p>At Delicacies Pizza we offers pizzas at affordable price for a common mwananchi</p>
-           <p>We deliver at a place of your convenience with addition delivery fees</p>
-        
-        </div>
-        <div class="container">
-            <h1 class="text-center" id="order pizza">Order Pizza</h1>
-            <div class="form-group row">
-                <div class="col-md-2"></div>
-                <div class="col-sm-8 order overlay text-center">
-                    <form class="col-sm-6 offset-sm-3 text center">
-                        <label>Select your Pizza Flavour</label>
-                        <select class="custom-select custom select-md mb-3 flavour" required>
-                            <option value="all">All</option>
-                            <option value="vegtikka">Veg Tikka</option>
-                            <option value="chic curry">Chicken Curry</option>
-                            <option value="chic periperi">Chicken Periperi</option>
-                            <option value="bbq">Barbeque</option>
-                            <option value="mushroom">Mushroom</option>
-                            <option value="haw">Hawaii flavor</option>
+            <div class="order row text-center">
+                <div class="col-md-6">
+                    <h1>Enter yor details below</h1>
+                    <form action=""id="pizzainfo">
+                        <label for="">Select your Pizza Size</label>
+                        <select class="form-control" name="size" id="size">
+                            <option value="1200">Large @ 1200</option>
+                            <option value="900">Medium @ 900</option>
+                            <option value="600">Small @ 600</option>
                         </select>
-
-                        <label>Choose your Choice of Size</label>
-                        <select class="custom-select custom select-md mb-3 size" required>
-                            <option value="regular">Regular</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="mega">Mega-Large</option>
+                        <label for="">Choose your desired toppings</label><br>
+                        <select class="form-control" name="" id="crust">
+                            <option value="230" name="crust">stuffed crust @ 230</option>
+                            <option value="250" name="crust">crispy @ 250</option>
+                            <option value="300" name="crust">glutten free</option>
                         </select>
+                        <label for="">Choose your Desired Toppings</label><br>
+                        <input value="150" type="checkbox" id="toppingone">Mushrooms
+                        <input value="150" type="checkbox" id="toppingone">Sausage
+                        <input value="150" type="checkbox" id="toppingone">Onions
+                        <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+                        <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
 
-                        <label>Choose your favourite crust</label>
-                        <select class="custom-select custom select-md mb-3 size" required>
-                            <option value="thin crust">Thin Crust @ Kes 150</option>
-                            <option value="thick crust">Thick Crust @ Kes 200</option>
-                            <option value="deep crust">Deep Crust @ Kes 250</option>
-                            <option value="cheese filled-crust">Cheese Filled Crust @ Kes 300</option>
-                            <option value="stuffed crust">Stuffed Crust @ Kes 350</option>
-                        </select>
-                        <label>Choose your favourite toppings</label>
-                        <select class="custom-select custom select-md mb-3 size" required>
-                            <option value="all">All</option>
-                            <option value="tomatoes">Tomatoes</option>
-                            <option value="mangoes">Tomatoes</option>
-                            <option value="vegetables">Vegetables</option>
-                            <option value="beef">Beef Toppings</option>
-                            <option value="chicken">Chicken</option>
-                            <option value="liver">Liver</option>
-                            <option value="fruits">Fruits</option>
-                        </select>
-                        <label for="number">Number of Pizzas</label><br>
-                        <input type="number" class="form-control" id="number" placeholder="Number of Pizzas" min="1" required><br>
-
-                    </form><br>
-
-                    <a href="#summary">
-                        <button type="submit" class="btn btn-success checkout" id=checkout>
-                            Checkout
-                        </button>
-                    </a>
-                </div>
-                <div class="col-sm-2"></div>            
-            </div>
-        </div>
-        <div class="order summary" id="sum-order">
-            <h1 class="text-center" id="summary"><strong>Order Summary</strong></h1>
-            <h2 class="text-center summary">Hurray!! Your order is as follows;</h2>
-            <ol id="list" class="text-center sum">
-            </ol>
-            <div class="customerdata-overlay">
-                <div class="customerdata row">
-                    <div class="col-sm-3"></div>
-                    <form action="" class="form-group col-sm-6 data">
-                        <input type="text" class="form-control cdata" placeholder="Enter Your Name"><br>
-                        <input type="text" class="form-control cdata" placeholder="Enter Your Phone Number"><br>
-                        <input type="text" class="form-control cdata" placeholder="Enter Your Location"><br>
-                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                        <label for="">Input Quantity</label>
+                        <input class="form-control form-group" type="text" id="numberofpizza">
+                        <button name="button" type="submit" id="submit" value="check-out" onclick="calctotalPrice()">Submit</button>
                     </form>
-                    
-                    <div class="col-sm-4"></div>
                 </div>
-            </div>
-            <div class="d-block mx-auto text-center">
-                <button class='deliver'>Make Delivery</button>
-                <button class='delivernot'>Pick Up</button>
-            </div>
-        </div>
 
-        <div class="contacts">
-            <div class="contact-overlay">
-                <h1 class="text-center contact text-white">Contacts:</h1>
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-5subs">
-                        <h1 class="text-center">Call Us </h1>
-                        <p class="text-center">+254-706-002-396</p>
-                        <form>
-                            <div class="email-info">
-                                <div class="form-group fill-all-form">
-                                    <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email" required="nbpsp">
-                                </div>
-                            </div>
-                            <div class="email-info-text-center">
-                                <button class="btn click-me" onclick="subscribe();">Subscribe</button>
-                            </div>
+                <div class="col-md-6">
+                    <div id="formlocation">
+                        <h2>For Delivery of Services</h2><br>
+                        <form id="delivery">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="" id="name" required="required">
+                            <label for="location">Location</label>
+                            <input class="form-control" type="text" id="location" placeholder="location">
+                            <label for="phonenumber">Phone Number</label>
+                            <input class="form-control" type="tel" placeholder="+254" id="number"><br>
+                            <button type="submit" name="button" id="submit">submit</button>
                         </form>
                     </div>
-                    <div class="col-md-4">
-                        <h4 class="text-center get-pizza">We appreciate Feedback. Send us a mail</h4>
-                    </div>
-                    <div class="col-md-1"></div>
                 </div>
             </div>
         </div>
     
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    
 </html>

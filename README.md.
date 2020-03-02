@@ -1,26 +1,39 @@
 # IP4
 # Title 
 ## Delicacies Pizza
+
 #Description
-### A Web-Application of Ordering Pizzas
+### A Web-Application of Ordering Pizzas. The user is in a position to request any order. The orders should be of diverse flavors, toppings,
+crust and different size. Additionally, the client can choose whether he or she need delivery of pizza to their location
+at an additional fees.
+
 #Author
 ###Evans Karanja Karuga
+
 #Set-Up
 ###Git clone: https://github.com/karanja477/IP4.git
 ###Extract the file from the Project Folder and launch index.html
+link to the live demo: https://karanja477.github.io/IP4/
+
 #Technologies and Languages Used
 ###HTML
 ###CSS
 ###JQuery
 ###JavaScript
 ###Bootstrap
+
 #BDD
 ###Pizza Flavour
 ###Pizza Size
 ###Pizza Toppings
 ###Pizza Price
 ###Pizza Crust
+
 #License
 ### MIT License MIT LICENSE © 2020 Evans
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 #Collaborate
 ###Reach me at e12karanja@gmail.com

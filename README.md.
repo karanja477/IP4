@@ -1,0 +1,26 @@
+# IP4
+# Title 
+## Delicacies Pizza
+#Description
+### A Web-Application of Ordering Pizzas
+#Author
+###Evans Karanja Karuga
+#Set-Up
+###Git clone: https://github.com/karanja477/IP4.git
+###Extract the file from the Project Folder and launch index.html
+#Technologies and Languages Used
+###HTML
+###CSS
+###JQuery
+###JavaScript
+###Bootstrap
+#BDD
+###Pizza Flavour
+###Pizza Size
+###Pizza Toppings
+###Pizza Price
+###Pizza Crust
+#License
+### MIT License MIT LICENSE © 2020 Evans
+#Collaborate
+###Reach me at e12karanja@gmail.com
